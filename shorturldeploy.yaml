@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: shorturlapi
+spec:
+  selector:
+    matchLabels:
+      app: shorturlapi
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: shorturlapi
+    spec:
+      containers:
+        - image: "rahulh25/devopsfinalshorturlapi"
+          imagePullPolicy: Always
+          name: shorturlapi
+          ports:
+            - containerPort: 5000

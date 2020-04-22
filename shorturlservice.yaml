@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: shorturlapi
+spec:
+  type: LoadBalancer
+  ports:
+  - port: 5000
+  selector:
+    app: shorturlapi

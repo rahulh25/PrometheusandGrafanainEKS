@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: shorturlapifrontend
+spec:
+  selector:
+    matchLabels:
+      app: shorturlapifrontend
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: shorturlapifrontend
+    spec:
+      containers:
+        - image: "rahulh25/devopsfinalshorturlfrontend"
+          imagePullPolicy: Always
+          name: shorturlapi
+          ports:
+            - containerPort: 80
