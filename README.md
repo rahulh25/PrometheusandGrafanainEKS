@@ -67,7 +67,7 @@ kubectl get svc -n monitoring -o wide
 
 5. Open the prometheus dashboard on your browser using the external ip. If it gives you a connection error give it a few minutes.<br>
 
-![PROMETHEUS DASHBOARD](https://github.com/rahulh25/screenshots/blob/master/grafana/prometheus.png)<br>
+![PROMETHEUS DASHBOARD](https://github.com/rahulh25/screenshots/blob/master/grafana/prometheus_homepage.png)<br>
 
 ## Steps to deploy grafana on the cluster
 
